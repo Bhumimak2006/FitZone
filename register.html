@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - FitZone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">FIT<span>ZONE</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="membership.html">Membership</a>
+        <a href="bmi.html">BMI</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>MEMBERSHIP REGISTRATION</h1>
+</section>
+
+<section class="form-section">
+
+    <form id="membershipForm"
+          action="php/register.php"
+          method="POST"
+          enctype="multipart/form-data">
+
+        <label for="name">Full Name</label>
+        <input type="text"
+               id="name"
+               name="name"
+               placeholder="Enter your name"
+               required>
+
+        <label for="email">Email</label>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Enter your email"
+               required>
+
+        <label for="password">Password</label>
+        <input type="password"
+               id="password"
+               name="password"
+               placeholder="Create a password (minimum 8 characters)"
+               minlength="8"
+               required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel"
+               id="phone"
+               name="phone"
+               placeholder="Enter 10-digit phone number"
+               pattern="[0-9]{10}"
+               maxlength="10"
+               required>
+
+        <label for="age">Age</label>
+        <input type="number"
+               id="age"
+               name="age"
+               min="14"
+               max="80"
+               required>
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="gender" value="Male" required>
+                Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Female">
+                Female
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Other">
+                Other
+            </label>
+        </div>
+
+        <label for="membership">Membership Plan</label>
+        <select id="membership" name="membership" required>
+            <option value="">Select Membership</option>
+            <option value="Basic">Basic - ₹499</option>
+            <option value="Premium">Premium - ₹999</option>
+            <option value="VIP">VIP - ₹1499</option>
+        </select>
+
+        <label>Fitness Goal</label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="goal" value="Weight Loss" required>
+                Weight Loss
+            </label>
+
+            <label>
+                <input type="radio" name="goal" value="Muscle Building">
+                Muscle Building
+            </label>
+
+            <label>
+                <input type="radio" name="goal" value="General Fitness">
+                General Fitness
+            </label>
+        </div>
+
+        <label for="start_date">Start Date</label>
+        <input type="date"
+               id="start_date"
+               name="start_date"
+               required>
+
+        <label for="photo">Profile Photo (Optional)</label>
+        <input type="file"
+               id="photo"
+               name="photo"
+               accept=".jpg,.jpeg,.png,.webp">
+
+        <label for="message">Additional Information</label>
+        <textarea id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about your fitness goals"></textarea>
+
+        <label class="terms">
+            <input type="checkbox" id="terms" required>
+            I agree to the Terms and Conditions.
+        </label>
+
+        <button type="submit" class="btn">REGISTER</button>
+        <button type="reset" class="reset-btn">RESET</button>
+
+        <p>Already registered? <a href="login.html">Login here</a></p>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 FitZone Gym</p>
+</footer>
+
+<script src="js/validation.js"></script>
+
+</body>
+</html>

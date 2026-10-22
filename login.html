@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login - FitZone</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        FIT<span>ZONE</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<section class="form-section">
+
+    <h1>MEMBER LOGIN</h1>
+
+    <form action="php/login.php"
+          method="POST">
+
+        <label>
+            Email
+        </label>
+
+        <input type="email"
+               name="email"
+               required>
+
+
+        <label>
+            Password
+        </label>
+
+        <input type="password"
+               name="password"
+               required>
+
+
+        <button type="submit"
+                class="btn">
+            LOGIN
+        </button>
+
+    </form>
+
+</section>
+
+
+<footer>
+
+    <p>&copy; 2026 FitZone Gym</p>
+
+</footer>
+
+</body>
+</html>

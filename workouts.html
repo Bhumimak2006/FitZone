@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Workout Plans - FitZone</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        FIT<span>ZONE</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="membership.html">Membership</a>
+        <a href="bmi.html">BMI</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<section class="page-header">
+
+    <h1>WORKOUT PLANS</h1>
+
+    <p>
+        Choose a workout according to your goal.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="filter-buttons">
+
+        <button onclick="showWorkouts('all')">
+            All
+        </button>
+
+        <button onclick="showWorkouts('beginner')">
+            Beginner
+        </button>
+
+        <button onclick="showWorkouts('weightloss')">
+            Weight Loss
+        </button>
+
+        <button onclick="showWorkouts('muscle')">
+            Muscle Building
+        </button>
+
+    </div>
+
+
+    <div id="workoutContainer"
+         class="cards">
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2 class="section-title">
+        WEEKLY WORKOUT SCHEDULE
+    </h2>
+
+    <table>
+
+        <tr>
+            <th>Day</th>
+            <th>Workout</th>
+            <th>Duration</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td>Chest & Triceps</td>
+            <td>60 Minutes</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>Back & Biceps</td>
+            <td>60 Minutes</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>Legs</td>
+            <td>60 Minutes</td>
+        </tr>
+
+        <tr>
+            <td>Thursday</td>
+            <td>Shoulders</td>
+            <td>45 Minutes</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td>Full Body</td>
+            <td>60 Minutes</td>
+        </tr>
+
+    </table>
+
+</section>
+
+
+<footer>
+
+    <p>&copy; 2026 FitZone Gym</p>
+
+</footer>
+
+
+<script src="js/workout.js"></script>
+
+</body>
+</html>
